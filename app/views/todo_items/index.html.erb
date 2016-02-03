@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <h1>To do:</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @todo_items.each do |todo_item| %>
+        <tr>
+          <td><%= todo_item.description %></td>
+          <td><%= link_to 'Show', todo_item, class: "btn btn-default btn-sm" %></td>
+          <td><%= link_to 'Edit', edit_todo_item_path(todo_item), class: "btn btn-default btn-sm" %></td>
+          <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default btn-sm" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <%= link_to 'New Todo item', new_todo_item_path, class: "btn btn-defalut" %>
+</div>
+
+
+
+

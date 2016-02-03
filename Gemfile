@@ -4,13 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Run sqlite locally
-group :development do
-  gem 'sqlite3'
-end
-# Run postgres once it is deployed
-group :production do
-  gem 'pg'
-end
+gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

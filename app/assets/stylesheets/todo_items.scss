@@ -114,14 +114,14 @@ h1 {
   text-align: right;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 760px) {
 
   body {
     background-image: url("/assets/background-sm.jpeg");
   }
 
   .container {
-    width: 70%;
+    width: 90%;
   }
 
 }

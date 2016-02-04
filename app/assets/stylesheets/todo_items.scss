@@ -1,0 +1,116 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375");
+}
+
+.back-button {
+  float: left;
+  display: inline-block;
+}
+
+.form-control {
+  font-size: 2em;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+a {
+  color: #fff;
+
+  &:hover {
+    text-decoration: none;
+    color: #1cb !important;
+  }
+
+  &.btn {
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    float: right;
+  }
+
+  &:focus { 
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+}
+
+input {
+
+  &.transparent-input {
+
+     background-color: rgba(0,0,0,0);
+     height: 100px;
+     border: none;
+     border-bottom: 1px solid gray;
+  }
+
+  &#todo_item_description:focus {
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  &::-webkit-input-placeholder {
+    color: white;
+  }
+}
+
+td {
+  height: 4.5em;
+  padding-right: 0 !important;
+  text-align: right;
+
+  &.item {
+    text-align: left;
+  }
+}
+
+
+h1 {
+  font-size: 3em;
+  text-align: right;
+}
+
+.container {
+  width: 50%;
+  float: right;
+  margin: 4em;
+}
+
+.btn-default {
+  margin: 2em; 
+  margin-right: 0;
+  background-color: rgba(0,0,0,0) !important;
+  color: #fff;
+  float: right;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &.btn-xs {
+    border: none;
+    margin: 1em;
+    padding: 0;
+  }
+
+  &:hover {
+    color: #1cb !important;
+  }
+}
+
+.description {
+  font-size: 2em;
+  text-align: right;
+}
+

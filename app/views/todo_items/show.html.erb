@@ -1,12 +1,10 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
-  
-  <h1>Added item</h1>
-  <p>
-    <strong>Description:</strong>
+  <h1>to do:</h1>
+  <hr>
+  <p class="description">
     <%= @todo_item.description %>
   </p>
   
-  <%= link_to 'Edit', edit_todo_item_path(@todo_item), class: "btn btn-default btn-sm" %>
-  <%= link_to 'Back', todo_items_path, class: "btn btn-default btn-sm" %>
+  <%= link_to 'Edit', edit_todo_item_path(@todo_item), class: "btn btn-default" %>
+  <%= link_to 'Back', todo_items_path, class: "btn btn-default" %>
 </div>

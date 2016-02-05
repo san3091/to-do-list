@@ -3,10 +3,11 @@
   They will automatically be included in application.css.
 */
 
+
 body {
   font-family: Montserrat, sans-serif;
   color: #fff;
-  background-image: url("/assets/background-lg.jpeg");
+  background-image: url("background-lg.jpeg");
 }
 
 .back-button {
@@ -117,11 +118,12 @@ h1 {
 @media screen and (max-width: 760px) {
 
   body {
-    background-image: url("/assets/background-sm.jpeg");
+    background-image: url("background-sm.jpeg");
   }
 
   .container {
     width: 90%;
+    padding-left: 3em;
   }
 
 }

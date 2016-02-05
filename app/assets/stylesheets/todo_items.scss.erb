@@ -7,7 +7,7 @@
 body {
   font-family: Montserrat, sans-serif;
   color: #fff;
-  background-image: url("background-lg.jpeg");
+  background-image: url("<%= image_path('background-lg.jpeg') %>");
 }
 
 .back-button {
@@ -118,7 +118,7 @@ h1 {
 @media screen and (max-width: 760px) {
 
   body {
-    background-image: url("background-sm.jpeg");
+    background-image: url('<%= image_path("background-sm.jpeg") %>');
   }
 
   .container {
